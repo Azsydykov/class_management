@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Меню" />
+          <Menu mnemonicParsing="false" text="Справочник">
+            <items>
+                  <MenuItem fx:id="menuItemCourses" mnemonicParsing="false" onAction="#onMenuItemCourses" text="Курсы" />
+                  <MenuItem fx:id="menuItemGroups" mnemonicParsing="false" onAction="#onMenuItemGroups" text="Группы" />
+                  <MenuItem fx:id="menuItemStudents" mnemonicParsing="false" onAction="#onMenuItemStudents" text="Студенты" />
+                  <MenuItem fx:id="menuItemTeachers" mnemonicParsing="false" onAction="#onMenuItemTeachers" text="Учителя" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help" />
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

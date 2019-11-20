@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groups.GroupManager">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu fx:id="onMenuGroupsManager" mnemonicParsing="false" text="Управление">
+               <items>
+                  <MenuItem fx:id="addGroup" mnemonicParsing="false" onAction="#onMenuAddGroup" text="Добавить" />
+                  <MenuItem fx:id="editGroup" mnemonicParsing="false" onAction="#onMenuEditGroup" text="Редактировать" />
+                  <MenuItem fx:id="deleteGroup" mnemonicParsing="false" onAction="#onMenuDeleteGroup" text="Удалить" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TableView fx:id="tableGroup" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="148.0" text="Курс" />
+          <TableColumn fx:id="colTeacherName" minWidth="0.0" prefWidth="169.0" text="Имя учителя" />
+            <TableColumn fx:id="colDate" minWidth="0.0" prefWidth="279.0" text="Дата начала курса" />
+            <TableColumn fx:id="colID" minWidth="0.0" prefWidth="3.0" text="GroupId" visible="false" />
+            <TableColumn fx:id="colCourseId" minWidth="0.0" prefWidth="3.0" text="CourseId" visible="false" />
+            <TableColumn fx:id="colTeacherId" minWidth="0.0" prefWidth="3.0" text="CourseId" visible="false" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
